@@ -1,0 +1,9 @@
+com/collectionlist/base/BaseClass.class
+com/collectionlist/utility/PropertyFileReader.class
+com/collectionlist/dataprovider/DataProviders.class
+com/collectionlist/actiondriver/Action.class
+com/collectionlist/listners/ExtentTestManager.class
+com/collectionlist/listners/TestListener.class
+com/collectionlist/pages/Loginpage.class
+com/collectionlist/listners/ExtentManager.class
+com/collectionlist/utility/ExcelUtility.class

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="CollectionList" >
+    <listeners>
+        <listener class-name="com.collectionlist.listners.TestListener" />
+    </listeners>
+    <parameter name="os" value="mac"/>
+    <parameter name="browser" value="chrome"></parameter>
+    <test name="LoginPage">
+        <parameter name="VALIDMOBNUMBER" value="9693564007"/>
+        <parameter name="INVALIDMOBNUMBER" value="969356400"/>
+        <parameter name="VALIDOTP" value="000000"/>
+        <parameter name="INVALIDOTP" value="111111"/>
+        <classes>
+            <class name="com.collectionlist.testscript.VerifyLoginPage"/>
+        </classes>
+    </test>
+    </suite>
