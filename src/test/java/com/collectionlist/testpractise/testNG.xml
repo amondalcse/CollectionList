@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="CollectionList" parallel="tests" >
+
+    <test name ="ChromeTest">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.collectionlist.testpractise.Dummy"/>
+        </classes>
+    </test>
+
+ <test  name ="SafariTests">
+        <parameter name="browser" value="safari"></parameter>
+        <classes>
+            <class name="com.collectionlist.testpractise.Dummy1"/>
+        </classes>
+    </test>
+</suite>
