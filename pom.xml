@@ -167,4 +167,9 @@
         <maven.compiler.target>16</maven.compiler.target>
     </properties>
 
+    </project>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
+    </properties>
+
 </project>
