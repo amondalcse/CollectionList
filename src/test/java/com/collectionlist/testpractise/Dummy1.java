@@ -33,7 +33,7 @@ public class Dummy1 extends Base
         driver.close();
     }*/
 
-    @Test(priority = 0)
+    @Test(groups = {"sanity"},priority = 0)
     public void scenario1(){
     String title = driver.getTitle();
     Assert.assertEquals(title,"Swag Labs");

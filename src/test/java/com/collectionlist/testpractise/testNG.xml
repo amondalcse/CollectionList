@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite  name="CollectionList" parallel="tests" >
+<suite  thread-count="5" name="CollectionList" parallel="tests" >
 
-    <test name ="ChromeTest">
+
+   <!-- <test name ="ChromeTest">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
             <class name="com.collectionlist.testpractise.Dummy"/>
         </classes>
-    </test>
+    </test>-->
 
- <test  name ="SafariTests">
+ <!--<test  name ="SafariTests">
         <parameter name="browser" value="safari"></parameter>
         <classes>
             <class name="com.collectionlist.testpractise.Dummy1"/>
+        </classes>
+    </test>-->
+    <test name ="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+       <groups>
+            <run>
+                <include name="sanity"/>
+                <!--<exclude name="regression"></exclude>-->
+            </run>
+        </groups>
+        <classes>
+            <class name="com.collectionlist.testpractise.GroupTest"/>
+            <class name="com.collectionlist.testpractise.GroupSignUPTest"/>
+            <class name="com.collectionlist.testpractise.GroupPaymentTest"/>
+
         </classes>
     </test>
 </suite>

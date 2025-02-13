@@ -10,7 +10,7 @@ public class Base
 {
     WebDriver driver;
 
-    @BeforeMethod
+    @BeforeClass
     @Parameters({"browser"})
     public void openBrowser(String br) throws InterruptedException {
         if(br.contains("chrome")) {
@@ -28,7 +28,7 @@ public class Base
         driver.get("https://www.saucedemo.com/");
     }
 
-    @AfterMethod
+    @AfterClass
     public void closeBrowser(){
         driver.close();
     }
